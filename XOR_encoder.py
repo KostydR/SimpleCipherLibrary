@@ -10,5 +10,4 @@ def crypt(input_text, key):  # Use ASCII please
 
         output_string += symbol
 
-    print(output_string)
     return output_string
