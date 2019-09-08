@@ -20,16 +20,16 @@ if answer == 'Caesar':
 
         decrypted_text = ce.decrypt(input_text, reverse_shift)
         eg.textbox('Decrypted text, sir', text=decrypted_text)
+
 elif answer == 'Atbash':
     input_text = str(eg.enterbox('enter text for operation'))
 
     crypt_text = ae.crypt(input_text)
     eg.textbox('Crypted text, sir', text=crypt_text)
+
 else:
     input_text = str(eg.enterbox('enter text for operation (only ascii symbols)'))
     key = int(eg.enterbox('Enter a key (Only integral accepted)'))
-    print(input_text)
-    print(key)
 
     crypt_text = Xe.crypt(input_text, key)
     eg.textbox('Crypted text, sir', text=crypt_text)
